@@ -1,0 +1,10 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "OTEL_LOG_LEVEL": "debug",
+    "FUNCTIONS_WORKER_RUNTIME": "node",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "languageWorkers__node__arguments": "--inspect",
+    "APPLICATIONINSIGHTS_CONNECTION_STRING": "<Your_Connection_String>"
+  }
+}
