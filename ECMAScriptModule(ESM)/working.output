@@ -1,0 +1,1797 @@
+
+> func start --verbose
+
+Selected out-of-process host.
+
+                  %%%%%%
+                 %%%%%%
+            @   %%%%%%    @
+          @@   %%%%%%      @@
+       @@@    %%%%%%%%%%%    @@@
+     @@      %%%%%%%%%%        @@
+       @@         %%%%       @@
+         @@      %%%       @@
+           @@    %%      @@
+                %%
+                %
+
+
+Azure Functions Core Tools
+Core Tools Version:       4.0.6821 Commit hash: N/A +c09a2033faa7ecf51b3773308283af0ca9a99f83 (64-bit)
+Function Runtime Version: 4.1036.1.23224
+
+Building host: version spec: ~4, startup suppressed: 'False', configuration suppressed: 'False', startup operation id: '0377296d-67f1-46c2-aca9-68b650d9a76a'
+Reading host configuration file '/Users/wilco/Development/gradientedge/OTelNodeSample/host.json'
+Host configuration file read:
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    }
+  },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[4.*, 5.0.0)"
+  }
+}
+FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: python
+FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: java
+FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: powershell
+Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle
+Found a matching extension bundle at /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0
+Loading functions metadata
+Worker indexing is enabled
+Fetching metadata for workerRuntime: node
+Reading functions metadata (Worker)
+Worker 2a6d7816-471f-4f03-a7b0-23c6b0cf811e connecting on 127.0.0.1:57753
+Worker 2a6d7816-471f-4f03-a7b0-23c6b0cf811e received WorkerInitRequest
+Loading entry point file "dist/index.js"
+Capability WorkerOpenTelemetryEnabled set to true.
+HTTP streaming enabled.
+Loaded entry point file "dist/index.js"
+Loading entry point file "dist/functions/httpTrigger1.js"
+Capability WorkerOpenTelemetryEnabled set to true.
+HTTP streaming enabled.
+Setting Node.js programming model to "@azure/functions" version "4.7.0"
+Loaded entry point file "dist/functions/httpTrigger1.js"
+Loading entry point file "dist/functions/httpTrigger2.js"
+Loaded entry point file "dist/functions/httpTrigger2.js"
+Auto-assigned port is valid. Port: 57764
+Worker 2a6d7816-471f-4f03-a7b0-23c6b0cf811e received FunctionsMetadataRequest
+2 functions found (Worker)
+2 functions loaded
+Looking for extension bundle Microsoft.Azure.Functions.ExtensionBundle at /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle
+Found a matching extension bundle at /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0
+Fetching information on versions of extension bundle Microsoft.Azure.Functions.ExtensionBundle available on https://functionscdn.azureedge.net/public/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/index.json
+Skipping bundle download since it already exists at path /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0
+Loading extension bundle from /Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0/bin
+Script Startup resetting load context with base path: '/Users/wilco/.azure-functions-core-tools/Functions/ExtensionBundles/Microsoft.Azure.Functions.ExtensionBundle/4.21.0/bin'.
+Reading host configuration file '/Users/wilco/Development/gradientedge/OTelNodeSample/host.json'
+Host configuration file read:
+{
+  "version": "2.0",
+  "logging": {
+    "applicationInsights": {
+      "samplingSettings": {
+        "isEnabled": true,
+        "excludedTypes": "Request"
+      }
+    }
+  },
+  "extensionBundle": {
+    "id": "Microsoft.Azure.Functions.ExtensionBundle",
+    "version": "[4.*, 5.0.0)"
+  }
+}
+Starting host metrics provider.
+FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: python
+FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: java
+FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: powershell
+FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: python
+FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: java
+FUNCTIONS_WORKER_RUNTIME set to node. Skipping WorkerConfig for language: powershell
+Initializing Warmup Extension.
+Initializing Host. OperationId: '0377296d-67f1-46c2-aca9-68b650d9a76a'.
+Host initialization: ConsecutiveErrors=0, StartupCount=1, OperationId=0377296d-67f1-46c2-aca9-68b650d9a76a
+(node:95752) ExperimentalWarning: `--experimental-loader` may be removed in the future; instead use `register()`:
+--import 'data:text/javascript,import { register } from "node:module"; import { pathToFileURL } from "node:url"; register("%40opentelemetry/instrumentation/hook.mjs", pathToFileURL("./"));'
+(Use `node --trace-warnings ...` to show where the warning was created)
+@opentelemetry/api: Registered a global for diag v1.9.0.
+AwsEcsDetector failed: Process is not on ECS
+AzureMonitorExporter was successfully setup
+AzureMonitorExporter was successfully setup
+AzureMonitorExporter was successfully setup
+AzureMonitorTraceExporter was successfully setup
+@opentelemetry/api: Registered a global for trace v1.9.0.
+@opentelemetry/api: Registered a global for context v1.9.0.
+@opentelemetry/api: Registered a global for propagation v1.9.0.
+AzureMonitorExporter was successfully setup
+AzureMonitorExporter was successfully setup
+AzureMonitorLogExporter was successfully setup
+Loading instrumentation for @opentelemetry/instrumentation-amqplib
+Loading instrumentation for @opentelemetry/instrumentation-aws-lambda
+@opentelemetry/instrumentation-aws-lambda Skipping lambda instrumentation: no _HANDLER/lambdaHandler or LAMBDA_TASK_ROOT. { taskRoot: undefined, handlerDef: undefined }
+Loading instrumentation for @opentelemetry/instrumentation-aws-sdk
+Loading instrumentation for @opentelemetry/instrumentation-bunyan
+Loading instrumentation for @opentelemetry/instrumentation-cassandra-driver
+Loading instrumentation for @opentelemetry/instrumentation-connect
+Loading instrumentation for @opentelemetry/instrumentation-cucumber
+Loading instrumentation for @opentelemetry/instrumentation-dataloader
+Loading instrumentation for @opentelemetry/instrumentation-dns
+Loading instrumentation for @opentelemetry/instrumentation-express
+Loading instrumentation for @opentelemetry/instrumentation-fastify
+Disabling instrumentation for @opentelemetry/instrumentation-fs
+Loading instrumentation for @opentelemetry/instrumentation-generic-pool
+Loading instrumentation for @opentelemetry/instrumentation-graphql
+Loading instrumentation for @opentelemetry/instrumentation-grpc
+Loading instrumentation for @opentelemetry/instrumentation-hapi
+Loading instrumentation for @opentelemetry/instrumentation-http
+Loading instrumentation for @opentelemetry/instrumentation-ioredis
+Loading instrumentation for @opentelemetry/instrumentation-kafkajs
+Loading instrumentation for @opentelemetry/instrumentation-knex
+Loading instrumentation for @opentelemetry/instrumentation-koa
+Loading instrumentation for @opentelemetry/instrumentation-lru-memoizer
+Loading instrumentation for @opentelemetry/instrumentation-memcached
+Loading instrumentation for @opentelemetry/instrumentation-mongodb
+Loading instrumentation for @opentelemetry/instrumentation-mongoose
+Loading instrumentation for @opentelemetry/instrumentation-mysql2
+Loading instrumentation for @opentelemetry/instrumentation-mysql
+Loading instrumentation for @opentelemetry/instrumentation-nestjs-core
+Loading instrumentation for @opentelemetry/instrumentation-net
+Loading instrumentation for @opentelemetry/instrumentation-pg
+Loading instrumentation for @opentelemetry/instrumentation-pino
+Loading instrumentation for @opentelemetry/instrumentation-redis
+Loading instrumentation for @opentelemetry/instrumentation-redis-4
+Loading instrumentation for @opentelemetry/instrumentation-restify
+Loading instrumentation for @opentelemetry/instrumentation-router
+Loading instrumentation for @opentelemetry/instrumentation-socket.io
+Loading instrumentation for @opentelemetry/instrumentation-tedious
+Loading instrumentation for @opentelemetry/instrumentation-undici
+Loading instrumentation for @opentelemetry/instrumentation-winston
+@@@WILCO
+HTTP streaming enabled.
+EnvDetectorSync found resource. Resource {
+  _attributes: { 'service.name': 'api-storefront-auth' },
+  asyncAttributesPending: false,
+  _syncAttributes: { 'service.name': 'api-storefront-auth' },
+  _asyncAttributesPromise: undefined
+}
+OSDetectorSync found resource. Resource {
+  _attributes: { 'os.type': 'darwin', 'os.version': '24.3.0' },
+  asyncAttributesPending: false,
+  _syncAttributes: { 'os.type': 'darwin', 'os.version': '24.3.0' },
+  _asyncAttributesPromise: undefined
+}
+ServiceInstanceIdDetectorSync found resource. Resource {
+  _attributes: { 'service.instance.id': 'cae35a12-b3e2-401a-aa61-de3dfaf036bb' },
+  asyncAttributesPending: false,
+  _syncAttributes: { 'service.instance.id': 'cae35a12-b3e2-401a-aa61-de3dfaf036bb' },
+  _asyncAttributesPromise: undefined
+}
+ProcessDetectorSync found resource. Resource {
+  _attributes: {
+    'process.pid': 95752,
+    'process.executable.name': 'node',
+    'process.executable.path': '/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node',
+    'process.command_args': [
+      '/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node',
+      '/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js',
+      '--host',
+      '127.0.0.1',
+      '--port',
+      '57753',
+      '--workerId',
+      '2a6d7816-471f-4f03-a7b0-23c6b0cf811e',
+      '--requestId',
+      '863e535a-c762-423f-bae2-055da7ba87b0',
+      '--grpcMaxMessageLength',
+      '2147483647',
+      '--functions-uri',
+      'http://127.0.0.1:57753/',
+      '--functions-worker-id',
+      '2a6d7816-471f-4f03-a7b0-23c6b0cf811e',
+      '--functions-request-id',
+      '863e535a-c762-423f-bae2-055da7ba87b0',
+      '--functions-grpc-max-message-length',
+      '2147483647'
+    ],
+    'process.runtime.version': '22.13.1',
+    'process.runtime.name': 'nodejs',
+    'process.runtime.description': 'Node.js',
+    'process.command': '/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js',
+    'process.owner': 'wilco'
+  },
+  asyncAttributesPending: false,
+  _syncAttributes: {
+    'process.pid': 95752,
+    'process.executable.name': 'node',
+    'process.executable.path': '/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node',
+    'process.command_args': [
+      '/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node',
+      '/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js',
+      '--host',
+      '127.0.0.1',
+      '--port',
+      '57753',
+      '--workerId',
+      '2a6d7816-471f-4f03-a7b0-23c6b0cf811e',
+      '--requestId',
+      '863e535a-c762-423f-bae2-055da7ba87b0',
+      '--grpcMaxMessageLength',
+      '2147483647',
+      '--functions-uri',
+      'http://127.0.0.1:57753/',
+      '--functions-worker-id',
+      '2a6d7816-471f-4f03-a7b0-23c6b0cf811e',
+      '--functions-request-id',
+      '863e535a-c762-423f-bae2-055da7ba87b0',
+      '--functions-grpc-max-message-length',
+      '2147483647'
+    ],
+    'process.runtime.version': '22.13.1',
+    'process.runtime.name': 'nodejs',
+    'process.runtime.description': 'Node.js',
+    'process.command': '/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js',
+    'process.owner': 'wilco'
+  },
+  _asyncAttributesPromise: undefined
+}
+AzureAppServiceDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: undefined
+}
+AzureFunctionsDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: undefined
+}
+AwsEcsDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise { {} }
+}
+AwsLambdaDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise { {} }
+}
+DeprecationWarning: The `punycode` module is deprecated. Please use a userland alternative instead.
+a resource's async attributes promise rejected: Error: connect EHOSTDOWN 169.254.169.254:80 - Local (192.168.1.196:57757)
+    at internalConnect (node:net:1115:16)
+    at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+    at node:net:1353:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+  errno: -64,
+  code: 'EHOSTDOWN',
+  syscall: 'connect',
+  address: '169.254.169.254',
+  port: 80
+}
+AzureVmResourceDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise { {} }
+}
+AwsEc2Detector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise { {} }
+}
+GcpDetector failed: GCP Metadata unavailable.
+GcpDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise { {} }
+}
+Container Detector failed to read the Container ID:  ENOENT: no such file or directory, open '/proc/self/cgroup'
+ContainerDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise { {} }
+}
+{
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'access',
+  path: '/var/run/secrets/kubernetes.io/serviceaccount/token'
+}
+AwsEksDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise { {} }
+}
+AwsBeanstalkDetectorSync failed: ENOENT: no such file or directory, access '/var/elasticbeanstalk/xray/environment.conf'
+AwsBeanstalkDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise { {} }
+}
+HostDetectorSync found resource. Resource {
+  _attributes: {
+    'host.name': 'WilcosMacStudio.fritz.box',
+    'host.arch': 'arm64',
+    'host.id': '404A723F-BBDC-59BE-B0DC-A55D8291428E'
+  },
+  asyncAttributesPending: false,
+  _syncAttributes: { 'host.name': 'WilcosMacStudio.fritz.box', 'host.arch': 'arm64' },
+  _asyncAttributesPromise: Promise { { 'host.id': '404A723F-BBDC-59BE-B0DC-A55D8291428E' } }
+}
+@opentelemetry/instrumentation-net Applying instrumentation patch for nodejs core module on require hook { module: 'net' }
+@opentelemetry/instrumentation-http Applying instrumentation patch for nodejs core module on require hook { module: 'http' }
+@opentelemetry/instrumentation-dns Applying instrumentation patch for nodejs core module on require hook { module: 'dns' }
+a resource's async attributes promise rejected: Error: ECS metadata api request timed out.
+    at Timeout._onTimeout (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resource-detector-alibaba-cloud/src/detectors/AlibabaCloudEcsDetector.ts:127:21)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+AlibabaCloudEcsDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise { {} }
+}
+Trace: {
+    "service.name": "api-storefront-auth"
+}
+    at DiagConsoleLogger2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Trace: {
+    "host.name": "WilcosMacStudio.fritz.box",
+    "host.arch": "arm64",
+    "host.id": "404A723F-BBDC-59BE-B0DC-A55D8291428E"
+}
+    at DiagConsoleLogger2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Trace: {
+    "os.type": "darwin",
+    "os.version": "24.3.0"
+}
+    at DiagConsoleLogger2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Trace: {
+    "service.instance.id": "cae35a12-b3e2-401a-aa61-de3dfaf036bb"
+}
+    at DiagConsoleLogger2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Trace: {
+    "process.pid": 95752,
+    "process.executable.name": "node",
+    "process.executable.path": "/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node",
+    "process.command_args": [
+        "/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node",
+        "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "57753",
+        "--workerId",
+        "2a6d7816-471f-4f03-a7b0-23c6b0cf811e",
+        "--requestId",
+        "863e535a-c762-423f-bae2-055da7ba87b0",
+        "--grpcMaxMessageLength",
+        "2147483647",
+        "--functions-uri",
+        "http://127.0.0.1:57753/",
+        "--functions-worker-id",
+        "2a6d7816-471f-4f03-a7b0-23c6b0cf811e",
+        "--functions-request-id",
+        "863e535a-c762-423f-bae2-055da7ba87b0",
+        "--functions-grpc-max-message-length",
+        "2147483647"
+    ],
+    "process.runtime.version": "22.13.1",
+    "process.runtime.name": "nodejs",
+    "process.runtime.description": "Node.js",
+    "process.command": "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js",
+    "process.owner": "wilco"
+}
+    at DiagConsoleLogger2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI2.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Exporting 1 span(s). Converting to envelopes...
+Exporting 2 envelope(s)
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+executing wrapped lookup callback function
+executing original lookup callback function
+@azure/functions-opentelemetry-instrumentation Applying instrumentation patch for module on require hook {
+  module: '@azure/functions',
+  version: '4.7.0',
+  baseDir: '/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@azure/functions'
+}
+@opentelemetry/instrumentation-http Applying instrumentation patch for nodejs core module on require hook { module: 'https' }
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http http instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http http instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+AwsEcsDetector failed: Process is not on ECS
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http http instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/api: Registered a global for diag v1.9.0.
+Current logger will be overwritten from Error
+    at DiagAPI.setLogger (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:97:23)
+    at Object.<anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/dist/index.js:15:12)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1335:12)
+    at Module.patchedRequire (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/require-in-the-middle/index.js:256:27)
+Current logger will overwrite one already registered from Error
+    at DiagAPI.setLogger (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:97:23)
+    at Object.<anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/dist/index.js:15:12)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+    at wrapModuleLoad (node:internal/modules/cjs/loader:217:24)
+    at Module.<anonymous> (node:internal/modules/cjs/loader:1335:12)
+    at Module.patchedRequire (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/require-in-the-middle/index.js:256:27)
+AzureMonitorExporter was successfully setup
+AzureMonitorExporter was successfully setup
+AzureMonitorExporter was successfully setup
+AzureMonitorTraceExporter was successfully setup
+Error: @opentelemetry/api: Attempted duplicate registration of API: trace
+    at registerGlobal (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/internal/global-utils.ts:47:17)
+    at TraceAPI.setGlobalTracerProvider (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/trace.ts:67:35)
+    at NodeTracerProvider.register (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/sdk-trace-base/src/BasicTracerProvider.ts:165:11)
+    at NodeTracerProvider.register (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/sdk-trace-node/src/NodeTracerProvider.ts:68:11)
+    at Object.<anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/dist/index.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Error: @opentelemetry/api: Attempted duplicate registration of API: context
+    at registerGlobal (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/internal/global-utils.ts:47:17)
+    at ContextAPI.setGlobalContextManager (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/context.ts:53:26)
+    at NodeTracerProvider.register (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/sdk-trace-base/src/BasicTracerProvider.ts:171:15)
+    at NodeTracerProvider.register (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/sdk-trace-node/src/NodeTracerProvider.ts:68:11)
+    at Object.<anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/dist/index.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+Error: @opentelemetry/api: Attempted duplicate registration of API: propagation
+    at registerGlobal (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/internal/global-utils.ts:47:17)
+    at PropagationAPI.setGlobalPropagator (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/propagation.ts:67:26)
+    at NodeTracerProvider.register (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/sdk-trace-base/src/BasicTracerProvider.ts:175:19)
+    at NodeTracerProvider.register (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/sdk-trace-node/src/NodeTracerProvider.ts:68:11)
+    at Object.<anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/dist/index.js:17:16)
+    at Module._compile (node:internal/modules/cjs/loader:1562:14)
+    at Object..js (node:internal/modules/cjs/loader:1699:10)
+    at Module.load (node:internal/modules/cjs/loader:1313:32)
+    at Function._load (node:internal/modules/cjs/loader:1123:12)
+    at TracingChannel.traceSync (node:diagnostics_channel:322:14)
+AzureMonitorExporter was successfully setup
+AzureMonitorExporter was successfully setup
+AzureMonitorLogExporter was successfully setup
+Loading instrumentation for @opentelemetry/instrumentation-amqplib
+Loading instrumentation for @opentelemetry/instrumentation-aws-lambda
+@opentelemetry/instrumentation-aws-lambda Skipping lambda instrumentation: no _HANDLER/lambdaHandler or LAMBDA_TASK_ROOT. { taskRoot: undefined, handlerDef: undefined }
+Loading instrumentation for @opentelemetry/instrumentation-aws-sdk
+Loading instrumentation for @opentelemetry/instrumentation-bunyan
+Loading instrumentation for @opentelemetry/instrumentation-cassandra-driver
+Loading instrumentation for @opentelemetry/instrumentation-connect
+Loading instrumentation for @opentelemetry/instrumentation-cucumber
+Loading instrumentation for @opentelemetry/instrumentation-dataloader
+Loading instrumentation for @opentelemetry/instrumentation-dns
+Loading instrumentation for @opentelemetry/instrumentation-express
+Loading instrumentation for @opentelemetry/instrumentation-fastify
+Disabling instrumentation for @opentelemetry/instrumentation-fs
+Loading instrumentation for @opentelemetry/instrumentation-generic-pool
+Loading instrumentation for @opentelemetry/instrumentation-graphql
+Loading instrumentation for @opentelemetry/instrumentation-grpc
+Loading instrumentation for @opentelemetry/instrumentation-hapi
+Loading instrumentation for @opentelemetry/instrumentation-http
+@opentelemetry/instrumentation-http Applying instrumentation patch for nodejs core module on require hook { module: 'https' }
+@opentelemetry/instrumentation-http Applying instrumentation patch for nodejs core module on require hook { module: 'http' }
+Loading instrumentation for @opentelemetry/instrumentation-ioredis
+Loading instrumentation for @opentelemetry/instrumentation-kafkajs
+Loading instrumentation for @opentelemetry/instrumentation-knex
+Loading instrumentation for @opentelemetry/instrumentation-koa
+Loading instrumentation for @opentelemetry/instrumentation-lru-memoizer
+Loading instrumentation for @opentelemetry/instrumentation-memcached
+Loading instrumentation for @opentelemetry/instrumentation-mongodb
+Loading instrumentation for @opentelemetry/instrumentation-mongoose
+Loading instrumentation for @opentelemetry/instrumentation-mysql2
+Loading instrumentation for @opentelemetry/instrumentation-mysql
+Loading instrumentation for @opentelemetry/instrumentation-nestjs-core
+Loading instrumentation for @opentelemetry/instrumentation-net
+Loading instrumentation for @opentelemetry/instrumentation-pg
+Loading instrumentation for @opentelemetry/instrumentation-pino
+Loading instrumentation for @opentelemetry/instrumentation-redis
+Loading instrumentation for @opentelemetry/instrumentation-redis-4
+Loading instrumentation for @opentelemetry/instrumentation-restify
+Loading instrumentation for @opentelemetry/instrumentation-router
+Loading instrumentation for @opentelemetry/instrumentation-socket.io
+Loading instrumentation for @opentelemetry/instrumentation-tedious
+Loading instrumentation for @opentelemetry/instrumentation-undici
+Loading instrumentation for @opentelemetry/instrumentation-winston
+@azure/functions-opentelemetry-instrumentation Module @azure/functions has been loaded before @azure/functions-opentelemetry-instrumentation so it might not work, please initialize it before requiring @azure/functions
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+EnvDetectorSync found resource. Resource {
+  _attributes: { 'service.name': 'api-storefront-auth' },
+  asyncAttributesPending: false,
+  _syncAttributes: { 'service.name': 'api-storefront-auth' },
+  _asyncAttributesPromise: undefined
+}
+OSDetectorSync found resource. Resource {
+  _attributes: { 'os.type': 'darwin', 'os.version': '24.3.0' },
+  asyncAttributesPending: false,
+  _syncAttributes: { 'os.type': 'darwin', 'os.version': '24.3.0' },
+  _asyncAttributesPromise: undefined
+}
+ServiceInstanceIdDetectorSync found resource. Resource {
+  _attributes: { 'service.instance.id': '0f526ac9-0ab0-4bfa-9476-8e527efeb482' },
+  asyncAttributesPending: false,
+  _syncAttributes: { 'service.instance.id': '0f526ac9-0ab0-4bfa-9476-8e527efeb482' },
+  _asyncAttributesPromise: undefined
+}
+ProcessDetectorSync found resource. Resource {
+  _attributes: {
+    'process.pid': 95752,
+    'process.executable.name': 'node',
+    'process.executable.path': '/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node',
+    'process.command_args': [
+      '/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node',
+      '/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js',
+      '--host',
+      '127.0.0.1',
+      '--port',
+      '57753',
+      '--workerId',
+      '2a6d7816-471f-4f03-a7b0-23c6b0cf811e',
+      '--requestId',
+      '863e535a-c762-423f-bae2-055da7ba87b0',
+      '--grpcMaxMessageLength',
+      '2147483647',
+      '--functions-uri',
+      'http://127.0.0.1:57753/',
+      '--functions-worker-id',
+      '2a6d7816-471f-4f03-a7b0-23c6b0cf811e',
+      '--functions-request-id',
+      '863e535a-c762-423f-bae2-055da7ba87b0',
+      '--functions-grpc-max-message-length',
+      '2147483647'
+    ],
+    'process.runtime.version': '22.13.1',
+    'process.runtime.name': 'nodejs',
+    'process.runtime.description': 'Node.js',
+    'process.command': '/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js',
+    'process.owner': 'wilco'
+  },
+  asyncAttributesPending: false,
+  _syncAttributes: {
+    'process.pid': 95752,
+    'process.executable.name': 'node',
+    'process.executable.path': '/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node',
+    'process.command_args': [
+      '/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node',
+      '/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js',
+      '--host',
+      '127.0.0.1',
+      '--port',
+      '57753',
+      '--workerId',
+      '2a6d7816-471f-4f03-a7b0-23c6b0cf811e',
+      '--requestId',
+      '863e535a-c762-423f-bae2-055da7ba87b0',
+      '--grpcMaxMessageLength',
+      '2147483647',
+      '--functions-uri',
+      'http://127.0.0.1:57753/',
+      '--functions-worker-id',
+      '2a6d7816-471f-4f03-a7b0-23c6b0cf811e',
+      '--functions-request-id',
+      '863e535a-c762-423f-bae2-055da7ba87b0',
+      '--functions-grpc-max-message-length',
+      '2147483647'
+    ],
+    'process.runtime.version': '22.13.1',
+    'process.runtime.name': 'nodejs',
+    'process.runtime.description': 'Node.js',
+    'process.command': '/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js',
+    'process.owner': 'wilco'
+  },
+  _asyncAttributesPromise: undefined
+}
+AzureAppServiceDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: undefined
+}
+AzureFunctionsDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: undefined
+}
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http http instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http http instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+AwsEcsDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise {
+    {},
+    [Symbol(async_id_symbol)]: 585,
+    [Symbol(trigger_async_id_symbol)]: 583,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+AwsLambdaDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise {
+    {},
+    [Symbol(async_id_symbol)]: 616,
+    [Symbol(trigger_async_id_symbol)]: 614,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+@azure/functions-opentelemetry-instrumentation Applying instrumentation patch for module on require hook {
+  module: '@azure/functions',
+  version: '4.7.0',
+  baseDir: '/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@azure/functions'
+}
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+@opentelemetry/instrumentation-http Applying instrumentation patch for nodejs core module on require hook { module: 'http' }
+@opentelemetry/instrumentation-http Applying instrumentation patch for nodejs core module on require hook { module: 'https' }
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+@opentelemetry/instrumentation-http outgoingRequest on request error() Error: connect EHOSTDOWN 169.254.169.254:80 - Local (192.168.1.196:57766)
+    at internalConnect (node:net:1115:16)
+    at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+    at node:net:1353:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+  errno: -64,
+  code: 'EHOSTDOWN',
+  syscall: 'connect',
+  address: '169.254.169.254',
+  port: 80
+}
+@opentelemetry/instrumentation-http outgoingRequest on request error() Error: connect EHOSTDOWN 169.254.169.254:80 - Local (192.168.1.196:57767)
+    at internalConnect (node:net:1115:16)
+    at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+    at node:net:1353:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+  errno: -64,
+  code: 'EHOSTDOWN',
+  syscall: 'connect',
+  address: '169.254.169.254',
+  port: 80
+}
+@opentelemetry/instrumentation-http outgoingRequest on request error() Error: connect EHOSTDOWN 169.254.169.254:80 - Local (192.168.1.196:57768)
+    at internalConnect (node:net:1115:16)
+    at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+    at node:net:1353:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+  errno: -64,
+  code: 'EHOSTDOWN',
+  syscall: 'connect',
+  address: '169.254.169.254',
+  port: 80
+}
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+a resource's async attributes promise rejected: Error: connect EHOSTDOWN 169.254.169.254:80 - Local (192.168.1.196:57767)
+    at internalConnect (node:net:1115:16)
+    at defaultTriggerAsyncIdScope (node:internal/async_hooks:464:18)
+    at node:net:1353:9
+    at process.processTicksAndRejections (node:internal/process/task_queues:85:11) {
+  errno: -64,
+  code: 'EHOSTDOWN',
+  syscall: 'connect',
+  address: '169.254.169.254',
+  port: 80
+}
+AzureVmResourceDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise {
+    {},
+    [Symbol(async_id_symbol)]: 632,
+    [Symbol(trigger_async_id_symbol)]: 624,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+AwsEc2Detector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise {
+    {},
+    [Symbol(async_id_symbol)]: 576,
+    [Symbol(trigger_async_id_symbol)]: 574,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+GcpDetector failed: GCP Metadata unavailable.
+GcpDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise {
+    {},
+    [Symbol(async_id_symbol)]: 557,
+    [Symbol(trigger_async_id_symbol)]: 535,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+Container Detector failed to read the Container ID:  ENOENT: no such file or directory, open '/proc/self/cgroup'
+ContainerDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise {
+    {},
+    [Symbol(async_id_symbol)]: 492,
+    [Symbol(trigger_async_id_symbol)]: 484,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+{
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'access',
+  path: '/var/run/secrets/kubernetes.io/serviceaccount/token'
+}
+AwsEksDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise {
+    {},
+    [Symbol(async_id_symbol)]: 597,
+    [Symbol(trigger_async_id_symbol)]: 595,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+AwsBeanstalkDetectorSync failed: ENOENT: no such file or directory, access '/var/elasticbeanstalk/xray/environment.conf'
+AwsBeanstalkDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise {
+    {},
+    [Symbol(async_id_symbol)]: 609,
+    [Symbol(trigger_async_id_symbol)]: 607,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+executing wrapped lookup callback function
+executing original lookup callback function
+@opentelemetry/instrumentation-http outgoingRequest on request error() Error: getaddrinfo ENOTFOUND metadata.google.internal.
+(node:dns:120:26)
+    at GetAddrInfoReqWrap.callbackTrampoline (node:internal/async_hooks:130:17) {
+  errno: -3008,
+  code: 'ENOTFOUND',
+  syscall: 'getaddrinfo',
+  hostname: 'metadata.google.internal.'
+}
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+HostDetectorSync found resource. Resource {
+  _attributes: {
+    'host.name': 'WilcosMacStudio.fritz.box',
+    'host.arch': 'arm64',
+    'host.id': '404A723F-BBDC-59BE-B0DC-A55D8291428E'
+  },
+  asyncAttributesPending: false,
+  _syncAttributes: { 'host.name': 'WilcosMacStudio.fritz.box', 'host.arch': 'arm64' },
+  _asyncAttributesPromise: Promise {
+    { 'host.id': '404A723F-BBDC-59BE-B0DC-A55D8291428E' },
+    [Symbol(async_id_symbol)]: 509,
+    [Symbol(trigger_async_id_symbol)]: 508,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+LoggerFilterOptions
+{
+  "MinLevel": "None",
+  "Rules": [
+    {
+      "ProviderName": null,
+      "CategoryName": "Microsoft.Hosting.Lifetime",
+      "LogLevel": "None",
+      "Filter": null
+    },
+    {
+      "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": "None",
+      "Filter": null
+    },
+    {
+      "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": null,
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": null,
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Function.*",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Azure.*",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Host.Results",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Host.Aggregator",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Microsoft.Azure.WebJobs.*",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": "None",
+      "Filter": null
+    },
+    {
+      "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    }
+  ]
+}
+LoggerFilterOptions
+{
+  "MinLevel": "None",
+  "Rules": [
+    {
+      "ProviderName": null,
+      "CategoryName": "Microsoft.Hosting.Lifetime",
+      "LogLevel": "None",
+      "Filter": null
+    },
+    {
+      "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": "None",
+      "Filter": null
+    },
+    {
+      "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": null,
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": null,
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Function.*",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Azure.*",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Host.Results",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Host.Aggregator",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "OpenTelemetry.Logs.OpenTelemetryLoggerProvider",
+      "CategoryName": "Microsoft.Azure.WebJobs.*",
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": "None",
+      "Filter": null
+    },
+    {
+      "ProviderName": "Microsoft.Azure.WebJobs.Script.WebHost.Diagnostics.SystemLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    },
+    {
+      "ProviderName": "Azure.Functions.Cli.Diagnostics.ColoredConsoleLoggerProvider",
+      "CategoryName": null,
+      "LogLevel": null,
+      "Filter": "<AddFilter>b__0"
+    }
+  ]
+}
+LanguageWorkerOptions
+{
+  "WorkerConfigs": [
+    {
+      "Description": {
+        "Language": "node",
+        "DefaultRuntimeName": null,
+        "DefaultRuntimeVersion": null,
+        "SupportedArchitectures": null,
+        "SupportedOperatingSystems": null,
+        "SupportedRuntimeVersions": null,
+        "SanitizeRuntimeVersionRegex": null,
+        "WorkerIndexing": "true",
+        "Extensions": [
+          ".js",
+          ".mjs",
+          ".cjs"
+        ],
+        "UseStdErrorStreamForErrorsOnly": false,
+        "DefaultExecutablePath": "node",
+        "DefaultWorkerPath": "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js",
+        "WorkerDirectory": "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node",
+        "Arguments": [],
+        "WorkerArguments": null,
+        "IsDisabled": null
+      },
+      "Arguments": {
+        "ExecutablePath": "node",
+        "ExecutableArguments": [],
+        "WorkerPath": "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js",
+        "WorkerArguments": []
+      },
+      "CountOptions": {
+        "SetProcessCountToNumberOfCpuCores": false,
+        "ProcessCount": 1,
+        "MaxProcessCount": 10,
+        "ProcessStartupInterval": "00:00:10",
+        "ProcessStartupTimeout": "00:01:00",
+        "InitializationTimeout": "00:02:00",
+        "EnvironmentReloadTimeout": "00:02:00",
+        "ProcessRestartInterval": "00:00:10",
+        "ProcessShutdownTimeout": "00:00:10"
+      }
+    }
+  ]
+}
+FunctionResultAggregatorOptions
+{
+  "BatchSize": 1000,
+  "FlushTimeout": "00:00:30",
+  "IsEnabled": true
+}
+ConcurrencyOptions
+{
+  "DynamicConcurrencyEnabled": false,
+  "MaximumFunctionConcurrency": 500,
+  "CPUThreshold": 0.8,
+  "SnapshotPersistenceEnabled": true
+}
+SingletonOptions
+{
+  "LockPeriod": "00:00:15",
+  "ListenerLockPeriod": "00:00:15",
+  "LockAcquisitionTimeout": "10675199.02:48:05.4775807",
+  "LockAcquisitionPollingInterval": "00:00:05",
+  "ListenerLockRecoveryPollingInterval": "00:01:00"
+}
+ScaleOptions
+{
+  "ScaleMetricsMaxAge": "00:02:00",
+  "ScaleMetricsSampleInterval": "00:00:10",
+  "MetricsPurgeEnabled": true,
+  "IsTargetScalingEnabled": true,
+  "IsRuntimeScalingEnabled": false
+}
+Starting JobHost
+Starting Host (HostId=wilcosmacstudio-1410346498, InstanceId=e30313d6-98aa-4ac3-9cc0-e0c159d67a49, Version=4.1036.1.23224, ProcessId=95710, AppDomainId=1, InDebugMode=False, InDiagnosticMode=False, FunctionsExtensionVersion=~4)
+Loading functions metadata
+Worker indexing is enabled
+Fetching metadata for workerRuntime: node
+Reading functions metadata (Worker)
+Reading functions metadata (Custom)
+0 functions found (Custom)
+2 functions loaded
+Generating 2 job function(s)
+Worker process started and initialized.
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Worker 2a6d7816-471f-4f03-a7b0-23c6b0cf811e received FunctionLoadRequest
+Worker 2a6d7816-471f-4f03-a7b0-23c6b0cf811e received FunctionLoadRequest
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+Found the following functions:
+Host.Functions.httpTrigger1
+Host.Functions.httpTrigger2
+[2025-03-28T13:43:01.194Z]
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+HttpOptions
+{
+  "DynamicThrottlesEnabled": false,
+  "EnableChunkedRequestBinding": false,
+  "MaxConcurrentRequests": -1,
+  "MaxOutstandingRequests": -1,
+  "RoutePrefix": "api"
+}
+Initializing function HTTP routes
+to 'httpTrigger1'
+to 'httpTrigger2'
+[2025-03-28T13:43:01.198Z]
+Host initialized (46ms)
+Host started (50ms)
+Job host started
+
+Functions:
+
+        httpTrigger1: http://localhost:4000/api/httpTrigger1
+
+        httpTrigger2: http://localhost:4000/api/httpTrigger2
+
+@opentelemetry/instrumentation-http outgoingRequest on request error() Error: ECS metadata api request timed out.
+    at Timeout._onTimeout (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resource-detector-alibaba-cloud/src/detectors/AlibabaCloudEcsDetector.ts:127:21)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+a resource's async attributes promise rejected: Error: ECS metadata api request timed out.
+    at Timeout._onTimeout (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resource-detector-alibaba-cloud/src/detectors/AlibabaCloudEcsDetector.ts:127:21)
+    at listOnTimeout (node:internal/timers:594:17)
+    at process.processTimers (node:internal/timers:529:7)
+AlibabaCloudEcsDetector found resource. Resource {
+  _attributes: {},
+  asyncAttributesPending: false,
+  _syncAttributes: {},
+  _asyncAttributesPromise: Promise {
+    {},
+    [Symbol(async_id_symbol)]: 531,
+    [Symbol(trigger_async_id_symbol)]: 519,
+    [Symbol(kResourceStore)]: undefined
+  }
+}
+Trace: {
+    "service.name": "api-storefront-auth"
+}
+    at DiagConsoleLogger.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Trace: {
+    "host.name": "WilcosMacStudio.fritz.box",
+    "host.arch": "arm64",
+    "host.id": "404A723F-BBDC-59BE-B0DC-A55D8291428E"
+}
+    at DiagConsoleLogger.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Trace: {
+    "os.type": "darwin",
+    "os.version": "24.3.0"
+}
+    at DiagConsoleLogger.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Trace: {
+    "service.instance.id": "0f526ac9-0ab0-4bfa-9476-8e527efeb482"
+}
+    at DiagConsoleLogger.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Trace: {
+    "process.pid": 95752,
+    "process.executable.name": "node",
+    "process.executable.path": "/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node",
+    "process.command_args": [
+        "/Users/wilco/.asdf/installs/nodejs/22.13.1/bin/node",
+        "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js",
+        "--host",
+        "127.0.0.1",
+        "--port",
+        "57753",
+        "--workerId",
+        "2a6d7816-471f-4f03-a7b0-23c6b0cf811e",
+        "--requestId",
+        "863e535a-c762-423f-bae2-055da7ba87b0",
+        "--grpcMaxMessageLength",
+        "2147483647",
+        "--functions-uri",
+        "http://127.0.0.1:57753/",
+        "--functions-worker-id",
+        "2a6d7816-471f-4f03-a7b0-23c6b0cf811e",
+        "--functions-request-id",
+        "863e535a-c762-423f-bae2-055da7ba87b0",
+        "--functions-grpc-max-message-length",
+        "2147483647"
+    ],
+    "process.runtime.version": "22.13.1",
+    "process.runtime.name": "nodejs",
+    "process.runtime.description": "Node.js",
+    "process.command": "/opt/homebrew/Cellar/azure-functions-core-tools@4/4.0.6821/workers/node/dist/src/nodejsWorker.js",
+    "process.owner": "wilco"
+}
+    at DiagConsoleLogger.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/diag/consoleLogger.ts:49:28)
+    at DiagAPI.verbose (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/api/src/api/diag.ts:60:32)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:124:12)
+    at Array.forEach (<anonymous>)
+    at logResources (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:120:13)
+    at <anonymous> (/Users/wilco/Development/gradientedge/OTelNodeSample/node_modules/@opentelemetry/resources/src/detect-resources.ts:107:7)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+executing wrapped lookup callback function
+executing original lookup callback function
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+Host lock lease acquired by instance ID '00000000000000000000000054F0A601'.
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+executing wrapped lookup callback function
+executing original lookup callback function
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+wrap lookup callback function and starts span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+executing wrapped lookup callback function
+executing original lookup callback function
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+Subscribed to diagnostic source 'Microsoft.Azure.Functions.Host.OpenTelemetry'
+Executing HTTP request: {
+  "requestId": "54678280-c02c-4fbf-8a01-cfef0a9aabae",
+  "method": "POST",
+  "userAgent": "PostmanRuntime/7.43.2",
+  "uri": "/api/httpTrigger1"
+}
+Executing 'Functions.httpTrigger1' (Reason='This function was programmatically called via the host APIs.', Id=6ddd2b87-55bd-432e-aef0-9175ba62a051)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Worker 2a6d7816-471f-4f03-a7b0-23c6b0cf811e received FunctionInvocationRequest with invocationId 6ddd2b87-55bd-432e-aef0-9175ba62a051
+@opentelemetry/instrumentation-http http instrumentation incomingRequest
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+Exporting 1 logs(s). Converting to envelopes...
+Exporting 1 envelope(s)
+wrap lookup callback function and starts span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Executing 2 "preInvocation" hooks
+Executed "preInvocation" hooks
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+Header traceparent- "00-b2f0ac5e-b44e-4441-b8cb-bca429de5bc9-01"
+Context traceparent- "00-bc82e9f89b7dc1ecf5565213b91f58e3-40985d96a0351454-01"
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+executing wrapped lookup callback function
+Exporting 1 span(s). Converting to envelopes...
+Exporting 2 envelope(s)
+executing original lookup callback function
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Exporting 1 span(s). Converting to envelopes...
+Exporting 2 envelope(s)
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Exporting 1 span(s). Converting to envelopes...
+Exporting 2 envelope(s)
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+Exporting 1 span(s). Converting to envelopes...
+Exporting 2 envelope(s)
+@opentelemetry/instrumentation-http outgoingRequest on end()
+Exporting 1 span(s). Converting to envelopes...
+Exporting 2 envelope(s)
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+Exporting 1 span(s). Converting to envelopes...
+Exporting 2 envelope(s)
+Instrumentation suppressed, returning Noop Span
+Instrumentation suppressed, returning Noop Span
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http https instrumentation outgoingRequest
+@opentelemetry/instrumentation-http http.ClientRequest return request
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on response()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on end()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+@opentelemetry/instrumentation-http outgoingRequest on request close()
+Executed 'Functions.httpTrigger1' (Succeeded, Id=6ddd2b87-55bd-432e-aef0-9175ba62a051, Duration=203ms)
+Executed HTTP request: {
+  "requestId": "54678280-c02c-4fbf-8a01-cfef0a9aabae",
+  "identities": "",
+  "status": "200",
+  "duration": "269"
+}
+Searching for filesystem persisted files
+Searching for filesystem persisted files
+Searching for filesystem persisted files
+Searching for filesystem persisted files
+Searching for filesystem persisted files
+
