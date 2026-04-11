@@ -19,7 +19,7 @@ dependencies:
     version: 1.9.0
   '@opentelemetry/auto-instrumentations-node':
     specifier: 0.58.0
-    version: 0.58.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0)
+    version: 0.58.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.6.1)
   '@opentelemetry/instrumentation':
     specifier: ^0.200.0
     version: 0.200.0(@opentelemetry/api@1.9.0)
@@ -27,8 +27,8 @@ dependencies:
     specifier: 1.29.0
     version: 1.29.0(@opentelemetry/api@1.9.0)
   axios:
-    specifier: ^1.12.0
-    version: 1.12.0
+    specifier: ^1.15.0
+    version: 1.15.0
   chalk:
     specifier: 5.4.1
     version: 5.4.1
@@ -429,7 +429,7 @@ packages:
     engines: {node: '>=8.0.0'}
     dev: false
 
-  /@opentelemetry/auto-instrumentations-node@0.58.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.1.0):
+  /@opentelemetry/auto-instrumentations-node@0.58.0(@opentelemetry/api@1.9.0)(@opentelemetry/core@2.6.1):
     resolution: {integrity: sha512-gtqPqkXp8TG6vrmbzAJUKjJm3nrCiVGgImlV1tj8lsVqpnKDCB1Kl7bCcXod36+Tq/O4rCeTDmW90dCHeuv9jQ==}
     engines: {node: ^18.19.0 || >=20.6.0}
     peerDependencies:
@@ -437,7 +437,7 @@ packages:
       '@opentelemetry/core': ^2.0.0
     dependencies:
       '@opentelemetry/api': 1.9.0
-      '@opentelemetry/core': 2.1.0(@opentelemetry/api@1.9.0)
+      '@opentelemetry/core': 2.6.1(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation': 0.200.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation-amqplib': 0.47.0(@opentelemetry/api@1.9.0)
       '@opentelemetry/instrumentation-aws-lambda': 0.51.1(@opentelemetry/api@1.9.0)
@@ -537,6 +537,16 @@ packages:
     dependencies:
       '@opentelemetry/api': 1.9.0
       '@opentelemetry/semantic-conventions': 1.37.0
+    dev: false
+
+  /@opentelemetry/core@2.6.1(@opentelemetry/api@1.9.0):
+    resolution: {integrity: sha512-8xHSGWpJP9wBxgBpnqGL0R3PbdWQndL1Qp50qrg71+B28zK5OQmUgcDKLJgzyAAV38t4tOyLMGDD60LneR5W8g==}
+    engines: {node: ^18.19.0 || >=20.6.0}
+    peerDependencies:
+      '@opentelemetry/api': '>=1.0.0 <1.10.0'
+    dependencies:
+      '@opentelemetry/api': 1.9.0
+      '@opentelemetry/semantic-conventions': 1.40.0
     dev: false
 
   /@opentelemetry/exporter-logs-otlp-grpc@0.200.0(@opentelemetry/api@1.9.0):
@@ -1602,6 +1612,11 @@ packages:
     engines: {node: '>=14'}
     dev: false
 
+  /@opentelemetry/semantic-conventions@1.40.0:
+    resolution: {integrity: sha512-cifvXDhcqMwwTlTK04GBNeIe7yyo28Mfby85QXFe1Yk8nmi36Ab/5UQwptOx84SsoGNRg+EVSjwzfSZMy6pmlw==}
+    engines: {node: '>=14'}
+    dev: false
+
   /@opentelemetry/sql-common@0.41.2(@opentelemetry/api@1.9.0):
     resolution: {integrity: sha512-4mhWm3Z8z+i508zQJ7r6Xi7y4mmoJpdvH0fZPFRkWrdp5fq7hhZ2HhYokEOLkfqSMgPR4Z9EyB3DBkbKGOqZiQ==}
     engines: {node: ^18.19.0 || >=20.6.0}
@@ -1759,12 +1774,12 @@ packages:
     resolution: {integrity: sha512-Oei9OH4tRh0YqU3GxhX79dM/mwVgvbZJaSNaRk+bshkj0S5cfHcgYakreBjrHwatXKbz+IoIdYLxrKim2MjW0Q==}
     dev: false
 
-  /axios@1.12.0:
-    resolution: {integrity: sha512-oXTDccv8PcfjZmPGlWsPSwtOJCZ/b6W5jAMCNcfwJbCzDckwG0jrYJFaWH1yvivfCXjVzV/SPDEhMB3Q+DSurg==}
+  /axios@1.15.0:
+    resolution: {integrity: sha512-wWyJDlAatxk30ZJer+GeCWS209sA42X+N5jU2jy6oHTp7ufw8uzUTVFBX9+wTfAlhiJXGS0Bq7X6efruWjuK9Q==}
     dependencies:
       follow-redirects: 1.15.11
-      form-data: 4.0.4
-      proxy-from-env: 1.1.0
+      form-data: 4.0.5
+      proxy-from-env: 2.1.0
     transitivePeerDependencies:
       - debug
     dev: false
@@ -1931,8 +1946,8 @@ packages:
         optional: true
     dev: false
 
-  /form-data@4.0.4:
-    resolution: {integrity: sha512-KrGhL9Q4zjj0kiUt5OO4Mr/A/jlI2jDYs5eHBpYHPcBEVSiipAvn2Ko2HnPe20rmcuuvMHNdZFp+4IlGTMF0Ow==}
+  /form-data@4.0.5:
+    resolution: {integrity: sha512-8RipRLol37bNs2bhoV67fiTEvdTrbMUYcFTiy3+wuuOnUog2QBHCZWXDRijWQfAkhBj2Uf5UnVaiWwA5vdd82w==}
     engines: {node: '>= 6'}
     dependencies:
       asynckit: 0.4.0
@@ -2200,8 +2215,9 @@ packages:
       long: 5.3.2
     dev: false
 
-  /proxy-from-env@1.1.0:
-    resolution: {integrity: sha512-D+zkORCbA9f1tdWRK0RaCR3GPv50cMxcrz4X8k5LTSUD1Dkw47mKJEZQNunItRTkWwgtaUSo1RVFRIG9ZXiFYg==}
+  /proxy-from-env@2.1.0:
+    resolution: {integrity: sha512-cJ+oHTW1VAEa8cJslgmUZrc+sjRKgAKl3Zyse6+PV38hZe/V6Z14TbCuXcan9F9ghlz4QrFr2c92TNF82UkYHA==}
+    engines: {node: '>=10'}
     dev: false
 
   /require-directory@2.1.1:
